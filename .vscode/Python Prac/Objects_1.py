@@ -1,8 +1,10 @@
 #oop
 
 class PlayerCharacter:
+    #Class object attribute
+    membership = True
     def __init__(self, name):
-        self.name = name
+        self.name = name #Attributes
 
     def run(self):
         print('run')#it dosent return anything 
