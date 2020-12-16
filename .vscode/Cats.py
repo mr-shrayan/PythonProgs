@@ -7,9 +7,9 @@ class Cat:
 
 
 # 1 Instantiate the Cat object with 3 cats
-cat1 = Cat('meow1',2)
-cat2 = Cat('meow2',3)
-cat3 = Cat('meow3',6)
+cat1 = Cat('meow1',4)
+cat2 = Cat('meow2',5)
+cat3 = Cat('meow3',7)
 
 
 # 2 Create a function that finds the oldest cat
