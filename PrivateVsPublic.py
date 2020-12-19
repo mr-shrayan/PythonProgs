@@ -1,6 +1,5 @@
 #oop
 class PlayerCharacter:
-    
     def __init__(self, name, age ):
         self.name = name 
         self.age = age
@@ -11,9 +10,9 @@ class PlayerCharacter:
     def speak(self):
         print(f'my name is{self.name} and my age is{self.age}')
 
-    player1=PlayerCharacter('shrayan',20)
+player1=PlayerCharacter('shrayan',20)
 
-    player1.name = '!!!'
-    player1.age = 'BOOOOO'
+player1.name = ' !!!'
+player1.age = ' BOOOOO'
 
-    print (player1.speak)
+print (player1.speak())
