@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import random
 
 def gen_ans():
@@ -32,10 +31,10 @@ def main():
 
     guessing = True
     while guessing:
-        user_input = raw_input("Give me 4 numbers: ")
+        user_input = input("Give me 4 numbers: ")
         if check_input(user_input):
             numbers = user_input.split(' ')
-            numbers = map(int, numbers)
+            numbers = list(map(int, numbers))
             a, b = check_answer(answer, numbers)
             print("\n%dA%dB" % (a, b))
             if a == 4:
