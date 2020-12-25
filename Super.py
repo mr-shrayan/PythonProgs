@@ -1,38 +1,17 @@
 class User():
+    def __init__(self,email):
+        self.email = email
+
     def sign_in(self):
         print('Logged in')
 
-    def attack(self):
-        print('Attacking')
 
 class Wizard(User):
-    def __init__(self, name, power):
+    def __init__(self, name, power, email): # Call the method from the init of the user here too
+        User.__init__(self,email)# All we did is, we called the init method of the User In the Object Wizard
         self.name = name
         self.power = power
     def attack(self):
-        User.attack(self)
         print(f'{self.name} Attacking with a power of {self.power}')
-class Archer(User):
-    def __init__(self, name, arrows):
-        self.name = name
-        self.arrows = arrows
-    def attack(self):
-        print(f'{self.name} Attacking with {self.arrows} arrows')
-
-wizard1 = Wizard('Marlyn', 200)
-archer1 = Archer('Ford', 500)
-wizard1.attack()
-# archer1.attack()
-
-#Polymorphism
-def player_attack(char):
-    char.attack()
-
-player_attack(wizard1)
-player_attack(archer1)
-
-#Another way to demonstrate
-
-for char in (wizard1,archer1):
-    char.attack()
-    
+wizard1 = Wizard('Marlyn', 200, 'marlyn@gmail.com')
+print(wizard1.email)# Now we can access the email of the user object's init method
