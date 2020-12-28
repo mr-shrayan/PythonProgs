@@ -11,7 +11,7 @@ class MyGen:
     def __next__(self): 
         if MyGen.current_state_of_next < self.stop:
             num = MyGen.current_state_of_next
-            MyGen.current_state_of_next += 1
+            MyGen.num += 1
             return num
 
         raise StopIteration
