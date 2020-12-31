@@ -158,15 +158,15 @@ def test_and_save(_global_step, epoch):
  
  
     if global_accuracy != 0 and global_accuracy < acc: summary = tf.Summary(value=[ tf.Summary.Value(tag="Accuracy/test", simple_value=acc), ]) 
-    train_writer.add_summary(summary, _global_step) 
-    saver.save(sess, save_path=_SAVE_PATH, global_step=_global_step) 
-    mes = "This epoch receive better accuracy: {:.2f} > {:.2f}. Saving session..."
+        train_writer.add_summary(summary, _global_step) 
+        saver.save(sess, save_path=_SAVE_PATH, global_step=_global_step) 
+        mes = "This epoch receive better accuracy: {:.2f} > {:.2f}. Saving session..."
  
 
-    print(mes.format(acc, global_accuracy))
-    global_accuracy = acc
+        print(mes.format(acc, global_accuracy))
+        global_accuracy = acc
  
-    elif global_accuracy == 0:
+    else global_accuracy == 0:
  
         global_accuracy = acc
  
