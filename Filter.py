@@ -5,4 +5,5 @@ def only_odd(item):
     return item % 2 !=0
 
 print(list(filter(only_odd, my_list)))
-# The command filters out the even number from the list since it returns the extression (item % 2 != 0) as false. only true values are selected.
+# The command filters out the even number from the list since it returns the extression (item % 2 != 0) as false. 
+# Only true values are selected.
