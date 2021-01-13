@@ -9,3 +9,8 @@
 # print(my_list3)
 # # print(my_list4)
 # # print(my_list5)
+
+sampledict= {'a':1, 'b':2}
+my_dict = {key:value**2 for key,value in sampledict.items()}
+
+print(my_dict)
