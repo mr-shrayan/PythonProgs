@@ -1,3 +1,7 @@
-my_list3 = [num for num in range(0,200)]
-# my_list4 = [num*2 for num in range(0,200)]
-# my_list5 = [num*2 for num in range(0,200) if num%2 ==0]
+duplicates = []
+# for value in some_list:
+#     if some_list.count(value)>1:
+#         if value not in duplicates:
+#             duplicates.append(value)
+
+# print (duplicates)
