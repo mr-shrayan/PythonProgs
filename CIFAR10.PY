@@ -12,19 +12,13 @@ from include.model import model, lr
 from ast import main
  
 train_x, train_y = get_data_set("train")
- 
 test_x, test_y = get_data_set("test")
- 
 tf.set_random_seed(21)
- 
 x, y, output, y_pred_cls, global_step, learning_rate = model()
- 
 global_accuracy = 0
- 
 epoch_start = 0
  
 # PARAMS
- 
 _BATCH_SIZE = 128
  
 _EPOCH = 60
@@ -126,9 +120,6 @@ def train(epoch):
     test_and_save(i_global, epoch)
  
  
- 
- 
- 
 def test_and_save(_global_step, epoch):
  
     global global_accuracy
@@ -158,33 +149,24 @@ def test_and_save(_global_step, epoch):
  
  
     if global_accuracy != 0 and global_accuracy < acc: summary = tf.Summary(value=[ tf.Summary.Value(tag="Accuracy/test", simple_value=acc), ]) 
-        train_writer.add_summary(summary, _global_step) 
-        saver.save(sess, save_path=_SAVE_PATH, global_step=_global_step) 
-        mes = "This epoch receive better accuracy: {:.2f} > {:.2f}. Saving session..."
+    train_writer.add_summary(summary, _global_step) 
+    saver.save(sess, save_path=_SAVE_PATH, global_step=_global_step) 
+    mes = "This epoch receive better accuracy: {:.2f} > {:.2f}. Saving session..."
  
 
-        print(mes.format(acc, global_accuracy))
-        global_accuracy = acc
- 
-    else global_accuracy == 0:
- 
-        global_accuracy = acc
- 
- 
- 
-    print("###########################################################################################################")
- 
+    print(mes.format(acc, global_accuracy))
+    global_accuracy = acc 
+
+
 def main():
- 
-train_start = time()
+
+    train_start = time()
  
  
  
     for i in range(_EPOCH):
  
-        print("
-Epoch: {}/{}
-".format((i+1), _EPOCH))
+        print("Epoch: {}/{}".format((i+1), _EPOCH))
  
         train(i)
  
