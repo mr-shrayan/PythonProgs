@@ -170,8 +170,6 @@ def main():
  
         train(i)
  
- 
- 
     hours, rem = divmod(time() - train_start, 3600)
  
     minutes, seconds = divmod(rem, 60)
