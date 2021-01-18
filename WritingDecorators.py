@@ -1,13 +1,13 @@
 # Decorators just supercharges a function. The main function of a decorator is to give extra fuctionalities to a function.
 def my_decorator(func):
-    def wrap_func():
+    def wrap_func(x):
         print('***********************')
-        func()
+        func(x)
         print('***********************')
-    return wrap_func()
-
+    return wrap_func
+#Now hello is accepting an argument.
 @my_decorator
-def hello():
-    print('Hellooooo')
-    return
-print(hello)
+def hello(greeting):
+    print(greeting)
+    
+hello('hiiiiii')
