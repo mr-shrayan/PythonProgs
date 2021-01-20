@@ -5,7 +5,7 @@ def performance(fn):
         t1 = time()
         result = fn(*args,**kwargs)
         t2 = time()
-        print(f'It took {t2-t1} ms to run')
+        print(f'It took {t2-t1} s to run')
         return result
     return wrapper
 
