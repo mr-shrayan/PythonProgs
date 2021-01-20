@@ -1,0 +1,1 @@
+# Video 155 cheacking out different types of errors and knowing how to solve the errors.
