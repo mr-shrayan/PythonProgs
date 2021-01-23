@@ -1,3 +1,6 @@
+# Correct all gramatical and punctuation errors that are causing the code to crash.
+#Import all the libraries
+
 import numpy as np
  
 import tensorflow as tf
