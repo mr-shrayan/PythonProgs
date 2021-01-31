@@ -9,6 +9,6 @@
 def sum(num1,num2):
     try:
         return num1+num2
-    except TypeError:#Catching the type of errors helps the programmer understand what type of error it is.
-        print("Please enter numbers")
+    except TypeError as err:#Catching the type of errors helps the programmer understand what type of error it is.
+        print("Please enter numbers" + err)
 print(sum('1',2))
