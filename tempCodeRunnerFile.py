@@ -1,1 +1,1 @@
-'a
+raise ValueError('Cut it out')
