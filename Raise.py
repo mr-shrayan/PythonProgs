@@ -9,6 +9,6 @@ while True:
      except ZeroDivisionError: #Mentioning the type of errors will lead to proper error handeling of a program. Find the proper type of errors to handle such kind
          print('Please enter age higher than 0')
      else:
-         print('Thank You')
+         print ('Thank You')
          break
 
