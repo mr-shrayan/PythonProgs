@@ -1,4 +1,4 @@
-#Raising our own error outputs using the raise function
+ #Raising our own error outputs using the raise function
 while True:
      try:
          age = int(input('Please enter your age'))
@@ -11,4 +11,3 @@ while True:
      else:
          print ('Thank You')
          break
-
