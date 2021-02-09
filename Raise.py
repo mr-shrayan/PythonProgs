@@ -7,7 +7,7 @@ while True:
      except ValueError: # Except block runs only once and once it catches an error it stops
           print('Please enter a number')
      except ZeroDivisionError: #Mentioning the type of errors will lead to proper error handeling of a program. Find the proper type of errors to handle such kind
-         print('Please enter age higher than 0')
+         print('Please enter age higher than 0 ')
      else:
          print ('Thank You')
          break
