@@ -160,7 +160,6 @@ def test_and_save(_global_step, epoch):
     print(mes.format(acc, global_accuracy))
     global_accuracy = acc 
 
-
 def main():
 
     train_start = time()
