@@ -8,7 +8,6 @@ def counter(num):
     result = []
     for i in range(num):
         result.append(i*2)
-        result.append(1*3)
     return result
 
 my_list = counter(100)
