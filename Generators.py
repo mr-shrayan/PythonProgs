@@ -12,3 +12,4 @@ def counter(num):
 
 my_list = counter(100)
 print(my_list)
+print('20')
