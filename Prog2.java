@@ -1,7 +1,7 @@
 //program to use switch case to do calculations
 import java.util.Scanner;
 
-class Main {
+class Prog2 {
   public static void main(String[] args) {
 
     char operator;
