@@ -2,7 +2,8 @@ package com.java.w3schools.blog.java.program.to;
 
 import java.util.Scanner
 
-public class SimpleInteretExample {
+public class SimpleInteretExample 
+{
 
     public static void main(String[] args) {
    
@@ -22,4 +23,4 @@ public class SimpleInteretExample {
    
     }
    
-   }
+}
