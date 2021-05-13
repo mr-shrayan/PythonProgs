@@ -1,5 +1,6 @@
 //Write a program to add two numbers, where numbers is to be accepted using Scanner class
 import java.util.Scanner;
+import java.io.*;
 class Scanner 
 {
     public static void main(String[] args) 
