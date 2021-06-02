@@ -16,7 +16,7 @@ class Student{
     void display(){System.out.println(rollno+" "+name+" "+college);}  
 }  
 //Test class to create and display the values of object  
-public class pron4_2{  
+public class prob4_2{  
    public static void main(String args[]){  
    Student.change();//calling change method  
    //creating objects  
