@@ -5,7 +5,7 @@ class Student{
     static String college = "ITS";  
     //static method to change the value of static variable  
     static void change(){  
-    college = "BBDIT";  
+    college = "HIT";  
     }  
     //constructor to initialize the variable  
     Student(int r, String n){  
