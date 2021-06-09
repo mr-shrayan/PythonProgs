@@ -1,5 +1,4 @@
 //Returning an array from a method
-
 import java.util.*;
 
 public class Prog6_2 {
