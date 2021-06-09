@@ -13,30 +13,30 @@ class Prog1 {
 
 		// Student Information
 		System.out.println(
-			"Student Information in student arr 0: ");
+			"\nStudent Information in array position 0: ");
 		arr[0].display();
 
 		System.out.println(
-			"Student Information in student arr 1: ");
+			"\nStudent Information in array position 1: ");
 		arr[1].display();
 	}
 }
 
-class Student {
-
+class Student 
+{
 	public int id;
 	public String name;
 
-	Student(int id, String name)
+	Student(int id, String name)//student class constructor
 	{
 		this.id = id;
 		this.name = name;
 	}
 
-public void display()
+public void display() // display method to display stydent data
 	{
 		System.out.println("Student id is: " + id + " "
-			            + " Student name is: "
+			            + " \nStudent name is: "
 						+   name);
 		System.out.println();
 	}

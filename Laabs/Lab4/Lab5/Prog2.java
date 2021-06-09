@@ -1,38 +1,34 @@
-// Java program to demonstrate objects 
-// passing to methods. 
-class ObjectPassDemo 
+// Passing an object to the method
+class ObjectPassMethod 
 { 
     int a, b; 
   
-    ObjectPassDemo(int i, int j) 
+    ObjectPassMethod(int i, int j) 
     { 
         a = i; 
         b = j; 
     } 
   
-    // return true if o is equal to the invoking 
-    // object notice an object is passed as an 
-    // argument to method 
-    boolean equalTo(ObjectPassDemo o) 
+    // return true if o is equal to the invoking object
+    boolean equalTo(ObjectPassMethod o) 
     { 
         return (o.a == a && o.b == b); 
     } 
 } 
-
-class ObjectReturnDemo 
+// Returning the object from the method
+class ObjectReturnMethod 
 { 
     int c; 
   
-    ObjectReturnDemo(int d) 
+    ObjectReturnMethod(int d) 
     { 
         c = d; 
     } 
   
     // This method returns an object 
-    ObjectReturnDemo incrByTen() 
+    ObjectReturnMethod incrByTen() 
     { 
-        ObjectReturnDemo temp = 
-               new ObjectReturnDemo(c+10); 
+        ObjectReturnMethod temp = new ObjectReturnMethod(c+10); 
         return temp; 
     } 
 } 
@@ -42,17 +38,20 @@ public class Prog2
 { 
     public static void main(String args[]) 
     { 
-        ObjectPassDemo ob1 = new ObjectPassDemo(100, 22); 
-        ObjectPassDemo ob2 = new ObjectPassDemo(100, 22); 
-        ObjectPassDemo ob3 = new ObjectPassDemo(-1, -1); 
+/* ---------------------Passing An Object--------------------------*/
+
+        ObjectPassMethod ob1 = new ObjectPassMethod(100, 22); 
+        ObjectPassMethod ob2 = new ObjectPassMethod(100, 22); 
+        ObjectPassMethod ob3 = new ObjectPassMethod(10, 20); 
+        
         System.out.println("\n \tObject Passing to Methods\n");
         System.out.println("ob1 == ob2: " + ob1.equalTo(ob2)); 
         System.out.println("ob1 == ob3: " + ob1.equalTo(ob3)); 
 
-//
+/* ---------------------Returning An Object--------------------------*/
 
-        ObjectReturnDemo ob4 = new ObjectReturnDemo(2); 
-        ObjectReturnDemo ob5; 
+        ObjectReturnMethod ob4 = new ObjectReturnMethod(2); 
+        ObjectReturnMethod ob5; 
   
         ob5 = ob4.incrByTen(); 
         System.out.println("\n \tObject Returning from Methods\n");
