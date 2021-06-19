@@ -12,7 +12,7 @@ def gen_ans():
 
 def check_input(user_input):
     numbers = user_input.split(' ')
-    if len(numbers) != 4:
+    if len(numbers) !=4:
         return False
     return True
 
