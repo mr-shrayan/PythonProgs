@@ -1,3 +1,5 @@
+#How things works underneath the hood for range.
+
 class My_gen():
     current = 0 
     def __init__(self, first, last):
