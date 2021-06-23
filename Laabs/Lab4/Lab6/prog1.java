@@ -35,7 +35,8 @@ class Student extends Teacher {
     }
 }
 
-class prog1 {
+class prog1 
+{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
