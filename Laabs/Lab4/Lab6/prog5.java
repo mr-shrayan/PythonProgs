@@ -1,69 +1,52 @@
-class CalculateBill
-{	
-	double billpay;
- 
-	void Bill(long units)
-	{
-  	  if(units<100)
-		billpay=units*1.20;
-	  else if(units<=300)
-		billpay=100*1.20+(units-100)*2;
-	  else if(units>300)
-		billpay=100*1.20+200 *2+(units-300)*3;
-	     
-         }	 
- 
-	
+import java.util.Scanner;
+
+class Commercial 
+{
+    String name;
+
+    void setname(String s) {
+        name = s;
+    }
+
+    void getname() {
+        System.out.println(name);
+    }
+
+    void calculatebill(int unit) {
+        int cost = 5 * unit;
+        System.out.println("Bill amount" + cost);
+    }
 }
-class prog5 extends CalculateBill
-{ 
-        public static void main(String args[]) 
-        {   
-	    long units;
- 
-	    Scanner sc=new Scanner(System.in);
- 
-	    System.out.println("Enter number of units");
-	   
-                  units=sc.nextLong();
- 
-            class CalculateBill
-{	
-	double billpay;
- 
-	void Bill(long units)
-	{
-  	  if(units<100)
-		billpay=units*1.20;
-	  else if(units<=300)
-		billpay=100*1.20+(units-100)*2;
-	  else if(units>300)
-		billpay=100*1.20+200 *2+(units-300)*3;
-	     
-         }	 
- 
-	
-}
-class prog5 extends CalculateBill
-{ 
-        public static void main(String args[]) 
-        {   
-	    long units;
- 
-	    Scanner sc=new Scanner(System.in);
- 
-	    System.out.println("Enter number of units");
-	   
-                  units=sc.nextLong();
- 
-                  prog5 b=new prog5();
-            b.Bill(units);
-        	
-      	    System.out.println("Bill to pay : " + b.billpay); 
-   } 
-} b=new prog5();
-            b.Bill(units);
-        	
-      	    System.out.println("Bill to pay : " + b.billpay); 
-   } 
+
+class Domestic extends Commercial
+
+    {
+        void calculatebill(int unit) {
+            double cost = 2.5 * unit;
+            System.out.println("Bill amount" + cost);
+        }
+    }
+
+
+class prog5 
+{
+    public static void main(String args[])
+    {
+
+        Scanner sc = new Scanner(System.in);
+        Commercial obj1 = new Commercial();
+        Domestic obj2 = new Domestic();
+
+        obj1.setname("Mr. Ajay");
+        obj1.getname();
+        System.out.println("Enter no. of units used");
+        int n = sc.nextInt();
+        obj1.calculatebill(n);
+
+        obj2.setname("Mr. Ray");
+        obj2.getname();
+        System.out.println("Enter no. of units used");
+        int m = sc.nextInt();
+        obj2.calculatebill(m);
+    }
 }
