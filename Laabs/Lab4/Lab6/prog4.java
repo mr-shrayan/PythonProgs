@@ -1,4 +1,4 @@
-//
+//classpath
 class Animal
 {  
     String color="white";  
