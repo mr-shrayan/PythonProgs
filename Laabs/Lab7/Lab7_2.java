@@ -1,21 +1,21 @@
 /* Implement the below diagram** using abstract class */
 
 abstract class university {
-    abstract void hey();
+    abstract void u1();
 
-    void hello() {
+    void u1_1() {
         System.out.println("this is ECE FROM HIT");
 
     }
 
-    void hie() {
+    void u1_2() {
         System.out.println("this is BT FROM HIT");
     }
 
 }
 
 class hit extends university {
-    void hey() {
+    void u1() {
         System.out.println("this is CSE from HIT");
 
     }
@@ -23,7 +23,7 @@ class hit extends university {
 }
 
 class mit extends university {
-    void hey() {
+    void u1() {
         System.out.println("this is CSE FROM MIT");
     }
 
@@ -39,7 +39,7 @@ class mit extends university {
 }
 
 class kit extends university {
-    void hey() {
+    void u1() {
         System.out.println("this is CSE FROM KIT");
     }
 
@@ -56,15 +56,15 @@ public class Lab7_2 {
         kit cse2 = new kit();
         kit ece2 = new kit();
         kit bt2 = new kit();
-        cse.hey();
-        ece.hello();
-        bt.hie();
+        cse.u1();
+        ece.u1_1();
+        bt.u1_2();
         cse1.ft();
         eie.eie();
         ft.ft();
-        cse2.hey();
-        ece2.hello();
-        bt2.hie();
+        cse2.u1();
+        ece2.u1_1();
+        bt2.u1_2();
 
     }
 }
