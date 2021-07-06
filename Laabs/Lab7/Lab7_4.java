@@ -2,13 +2,13 @@
 Interface. (Average)*/
 
 interface Father {
-    float f_ht = 6.2f;
+    float f_ht = 5.11f;
 
     void height();
 }
 
 interface Mother {
-    float m_ht = 5.5f;
+    float m_ht = 5.4f;
 
     void height();
 }
