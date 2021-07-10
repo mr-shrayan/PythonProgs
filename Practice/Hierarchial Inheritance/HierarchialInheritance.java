@@ -1,3 +1,5 @@
+// Shrayan Bandyopadhyay L20/CSE/228
+
 class HIT{
     String addr;
     int stu;
@@ -37,7 +39,7 @@ class ECE extends HIT{
 
 
 
-class HierarchialInheritance {
+public class HierarchialInheritance {
     public static void main(String[] args){
         CSE c = new CSE();
         ECE e = new ECE();
