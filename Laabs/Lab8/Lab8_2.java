@@ -1,35 +1,30 @@
-/*Show an example of multiple catch block and nested try.*/
+// example of multiple catch block and nested try
 
 class Lab8_2 {
     public static void main(String[] args) {
-
         try {
-
             try {
-                int result = 89 / 0;
-                System.out.println("result= " + result);
+                int n = 100 / 0; // throws exception
+                System.out.println("result= " + n);
             }
 
             catch (ArithmeticException ae) {
-                System.out.println("Exception Ocurred");
-                System.out.println("Exception Description: " + ae);
+                System.out.println("Exception : " + ae);
             }
 
-            int ar[] = new int[5];
-            ar[8] = 32;
+            int arr[] = new int[10];
+            arr[6] = 30;
 
-            int value = (5 + 6) / 0;
-            System.out.println("value= " + value);
+            int value = (5 + 6) / 0; // throws exception
+            System.out.println("value = " + value);
         }
 
         catch (ArrayIndexOutOfBoundsException E) {
-            System.out.println("Exception Ocurred");
-            System.out.println("Exception Description: " + E);
+            System.out.println("Exception : " + E);
         }
 
         catch (ArithmeticException ae) {
-            System.out.println("Exception Ocurred");
-            System.out.println("Exception Description: " + ae);
+            System.out.println("Exception : " + ae);
         }
 
     }

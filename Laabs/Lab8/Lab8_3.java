@@ -1,5 +1,4 @@
-/*Write a program to calculate percentage of a student for 3 different
-subjects. Create an exception if the marks entered greater than 100.*/
+// Program to calculate percentage of a student for 3 different subjects. Create an exception if the marks entered is greater than 100
 
 import java.util.Scanner;
 
@@ -26,7 +25,7 @@ public class Lab8_3 {
         }
 
         catch (Exception e) {
-            System.out.println("Exception: Entered marks is greater than 100");
+            System.out.println("EXCEPTION : Marks entered is above 100");
         }
     }
 }
