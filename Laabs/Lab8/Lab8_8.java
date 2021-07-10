@@ -5,11 +5,11 @@ public class Lab8_8 {
 
     public static void main(String args[]) {
 
-        char s[] = { 'A', 'h', 'e', 'r', 'i' };
+        char s[] = { 'S', 'h', 'r', 'a', 'y', 'a', 'n' };
         String str = new String(s);
         System.out.println(str);
 
-        String st = "Aheri";
+        String st = "Shrayan";
 
         char[] ch = st.toCharArray();
 
