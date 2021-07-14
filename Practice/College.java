@@ -23,7 +23,7 @@ class College {
         System.out.println("Details of Teacher");
         Teacher t = new Teacher(493, "Sir. Palash Ray", "OOP", "Java");
         t.Show();
-        Teacher s = new Teacher(493, "Swarnali Paul", "OOP", "Java Lab");
+        Teacher s = new Teacher(493, "Mam. Swarnali Paul", "OOP", "Java Lab");
         s.Show();
         System.out.println("\n...................................");
         System.out.println("\n\nDetails of Typist\n");
@@ -39,73 +39,94 @@ class College {
     }
 }
 
-class Staff {
+class Staff 
+{
 
     int code;
     String name;
 
-    public Staff(int code, String name) {
+    public Staff(int code, String name) 
+    {
 
         this.code = code;
         this.name = name;
     }
 
-    public void Show() {
+    public void Show() 
+    {
 
         System.out.println("\nName: " + name);
+        
         System.out.println("\nCode : "+ code);
 
     }
 }
 
-class Teacher extends Staff {
+class Teacher extends Staff 
+{
+
     String subject;
     String publication;
 
-    public Teacher(int code, String name, String subject, String publication) {
+    public Teacher(int code, String name, String subject, String publication) 
+    {
 
         super(code, name);
 
         this.subject = subject;
+
         this.publication = publication;
 
     }
 
-    public void Show() {
-
+    public void Show() 
+    {
         super.Show();
+
         System.out.println("Subject: " + subject);
+
         System.out.println("Publication : " + publication);
     }
 
 }
 
-class Typist extends Staff {
+class Typist extends Staff 
+{
+
     int speed;
 
-    public Typist(int code, String name, int speed) {
+    public Typist(int code, String name, int speed) 
+    {
 
         super(code, name);
+
         this.speed = speed;
     }
 
-    public void Show() {
+    public void Show() 
+    {
 
         super.Show();
+
         System.out.println("Speed: " + speed);
     }
 
 }
 
-class Casual extends Typist {
+class Casual extends Typist 
+{
     int DailyWage;
 
-    public Casual(int code, String name, int speed, int DailyWage) {
+    public Casual(int code, String name, int speed, int DailyWage) 
+    {
+
         super(code, name, speed);
+
         this.DailyWage = DailyWage;
     }
 
-    public void Show() {
+    public void Show() 
+    {
 
         super.Show();
 
@@ -113,32 +134,44 @@ class Casual extends Typist {
     }
 }
 
-class Regular extends Typist {
+class Regular extends Typist 
+{
+
     int salaryMonthly;
 
-    public Regular(int code, String name, int speed, int salaryMonthly) {
+    public Regular(int code, String name, int speed, int salaryMonthly) 
+    {
+
         super(code, name, speed);
+
         this.salaryMonthly = salaryMonthly;
     }
 
-    public void Show() {
+    public void Show() 
+    {
 
         super.Show();
+
         System.out.println("Monthly Salary: " + salaryMonthly);
     }
 }
 
-class Officer extends Staff {
+class Officer extends Staff 
+{
+
     String grade;
 
     public Officer(int code, String name, String grade) {
+
         super(code, name);
+
         this.grade = grade;
     }
 
     public void Show() {
 
         super.Show();
+
         System.out.println("Grade: " + grade);
     }
 }
