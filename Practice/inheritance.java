@@ -1,0 +1,1 @@
+int i1 = Math.round(0.5f);
